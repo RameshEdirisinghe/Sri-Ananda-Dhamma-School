@@ -1,38 +1,39 @@
 'use client';
 
+import ContentLayout from '@/components/layout/ContentLayout';
 import ContactCard from '@/components/ui/contact/ContactCard';
 import ContactForm from '@/components/ui/contact/ContactForm';
 import SocialLinks from '@/components/ui/contact/SocialLinks';
-import ContactHours from '@/components/ui/contact/ContactHours';
 
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen px-4 py-10 max-w-5xl mx-auto space-y-12">
-      {/* Heading */}
-      <div className="text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold font-serif mb-2">📞 Connect With Us</h1>
-        <p className="text-muted text-sm">
-          We’d love to hear from you or welcome you to our Dhamma Institute.
-        </p>
-      </div>
-
+    <ContentLayout
+      title="Connect With Us"
+      subtitle="We’d love to hear from you or welcome you to our Dhamma Institute."
+      icon={<Phone size={32} />}
+    >
       {/* Contact Info Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-        <ContactCard icon={<Phone />} title="Phone" value="+94 77 123 4567" />
-        <ContactCard icon={<Mail />} title="Email" value="info@dhammaschool.lk" />
-        <ContactCard icon={<MapPin />} title="Location" value="Sri Saddharmodaya Temple, Colombo" />
+        <ContactCard icon={<Phone size={20} />} title="Phone" value="+94 76 356 6478" />
+        <ContactCard icon={<Mail size={20} />} title="Email" value="anadadhm1986@gmail.com" />
+        <ContactCard
+          icon={<MapPin size={20} />}
+          title="Location"
+          value="Sri Mahndrarama, Niwanthidiya"
+        />
       </div>
 
       {/* Contact Form */}
-      <ContactForm />
+      <div className="mt-12">
+        <ContactForm />
+      </div>
 
       {/* Social Buttons */}
-      <SocialLinks />
-
-      {/* Operating Hours */}
-      <ContactHours />
-    </div>
+      <div className="mt-10">
+        <SocialLinks />
+      </div>
+    </ContentLayout>
   );
 }

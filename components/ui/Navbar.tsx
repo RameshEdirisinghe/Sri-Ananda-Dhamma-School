@@ -18,7 +18,6 @@ const navLinks = [
 export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const isAdmin = true; // TODO: Replace with real auth logic
 
   const linkStyle = (href: string) =>
     `relative px-1 py-1 transition-all duration-200 ${
@@ -73,15 +72,6 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
-          {isAdmin && (
-            <Link
-              href="/admin"
-              className={`block ${linkStyle('/admin')}`}
-              onClick={() => setIsOpen(false)}
-            >
-              Admin
-            </Link>
-          )}
         </div>
       )}
     </nav>

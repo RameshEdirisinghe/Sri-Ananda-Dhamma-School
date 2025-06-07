@@ -83,6 +83,34 @@
       "job": "-",
       "dhammaRole": "Class Teacher - Grade 4, Prose Composition Department",
       "image": "/images/user-female.jpg"
+    },
+    {
+      "name": "Hiruni Avishka Denipitiya",
+      "education": "LLB (Hons) - University of Colombo",
+      "job": "-",
+      "dhammaRole": "Teacher in Charge of Oratory Forum",
+      "image": "/images/user-female.jpg"
+    },
+    {
+      "name": "Thushari Tharanga Liyanage",
+      "education": "Diploma in Montessori Method of Education (Teaching)",
+      "job": "-",
+      "dhammaRole": "Class Teacher - Grade 1",
+      "image": "/images/user-female.jpg"
+    },
+    {
+      "name": "Ramesh Edirisinghe",
+      "education": "Undergraduate - University of Moratuwa",
+      "job": "Software Engineer Intern - Residue",
+      "dhammaRole": "Teacher in Charge of Oratory Forum",
+      "image": "/images/ramesh.jpg"
+    },
+    {
+      "name": "Chandupa Lokuliyana",
+      "education": "Undergraduate - University of Moratuwa",
+      "job": "Software Engineer Intern - Prologics",
+      "dhammaRole": "Teacher in Charge of Oratory Forum",
+      "image": "/images/user-male.jpg"
     }
   ]
 }

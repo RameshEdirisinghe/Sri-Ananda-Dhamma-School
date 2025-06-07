@@ -1,53 +1,59 @@
 {
   "leftMilestones": [
     {
-      "year": 1997,
-      "title": "Dhamma School Founded",
-      "desc": "Started with 12 students and 1 teacher under the temple tree.",
-      "image": "/timeline/1997.jpg"
+      "year": 1987,
+      "title": "First Zonal Victory – Iresha Weerapperuma",
+      "desc": "Our Dhamma School's first-ever zonal win, led by Iresha Weerapperuma — marking a new era in academic recognition.",
+      "image": "/timeline/1987.jpg"
     },
     {
-      "year": 2001,
-      "title": "First Annual Sil Program",
-      "desc": "Introduced the tradition of monthly one-day retreats for students.",
-      "image": "/timeline/2001.jpg"
+      "year": 1998,
+      "title": "First All-Island Representation",
+      "desc": "Nadeeka Sanjeewani represented Grade 6 in Gadya Rachana — our very first step onto the national stage.",
+      "image": "/timeline/1998.jpg"
     },
     {
-      "year": 2010,
-      "title": "Cultural Day Initiated",
-      "desc": "Started an annual event to celebrate traditional arts and customs.",
-      "image": "/timeline/demo-2010.jpg"
+      "year": 2003,
+      "title": "First Time Zonal Runners-up",
+      "desc": "A major milestone — placing second at the zonal level for the first time in Dhamma competition history.",
+      "image": "/timeline/2003.jpg"
     },
-    {
-      "year": 2024,
-      "title": "Digital Classroom Launch",
-      "desc": "Introduced online learning platform with video dhamma sessions.",
-      "image": "/timeline/2024.jpg"
-    }
-  ],
-  "rightMilestones": [
     {
       "year": 2016,
       "title": "Zonal Champions",
-      "desc": "Crowned champions in the zonal Dhamma competition.",
+      "desc": "Crowned champions in the zonal Dhamma competition — a sweeping win across multiple categories.",
       "image": "/images/event-3.jpg"
-    },
-    {
-      "year": 2017,
-      "title": "Record-breaking Victory",
-      "desc": "Won with 39 out of 41 students securing placements — a new record.",
-      "image": "/timeline/2017.jpg"
     },
     {
       "year": 2024,
       "title": "Colombo District Best School",
-      "desc": "Recognized as the top Dhamma school in the entire Colombo District.",
+      "desc": "Recognized as the top Dhamma school in the entire Colombo District for excellence in both academics and ethics.",
       "image": "/timeline/2024-district.jpg"
+    }
+  ],
+  "rightMilestones": [
+    {
+      "year": 2014,
+      "title": "First All-Island Victory – Ramesh Jayarathne",
+      "desc": "Won first place in the 'Daham Danuma' (Dharmacharya) competition — a historical moment for our school.",
+      "image": "/timeline/2014.jpg"
+    },
+    {
+      "year": 2017,
+      "title": "Record-breaking Victory",
+      "desc": "Won with 39 out of 41 students securing placements — the highest achievement in school history.",
+      "image": "/timeline/2017.jpg"
+    },
+    {
+      "year": 2019,
+      "title": "Island First – Amasha Sharindi",
+      "desc": "Amasha Sharindi became the All-Island First in 'Awasana Daham Danuma', setting a new standard in excellence.",
+      "image": "/timeline/2019.jpg"
     },
     {
       "year": 2024,
       "title": "All-Island Champions",
-      "desc": "Named the Best Dhamma School in the All-Island Competition.",
+      "desc": "Named the Best Dhamma School in the All-Island Competition — a proud victory earned with unity and commitment.",
       "image": "/timeline/2024-all-island.jpg"
     }
   ]

@@ -8,12 +8,12 @@ type Props = {
 
 const ContactCard: FC<Props> = ({ icon, title, value }) => {
   return (
-    <div className="flex flex-col items-center bg-white rounded-2xl px-6 py-8 shadow-md border hover:shadow-lg transition group">
-      <div className="bg-orange-100 text-primary p-3 rounded-full mb-4 group-hover:scale-110 transition">
+    <div className="flex flex-col items-center bg-primary-light border border-neutral-border rounded-xl px-6 py-6 shadow-soft hover:shadow-md transition">
+      <div className="mb-4 text-ui-icon bg-ui-highlight p-3 rounded-full">
         {icon}
       </div>
-      <p className="font-serif text-base text-gray-700">{title}</p>
-      <p className="text-sm text-gray-500 mt-1">{value}</p>
+      <p className="text-sm font-medium text-neutral">{title}</p>
+      <p className="text-sm text-neutral-muted">{value}</p>
     </div>
   );
 };

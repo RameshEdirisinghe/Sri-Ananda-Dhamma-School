@@ -2,23 +2,23 @@ import { Facebook, MessageCircle } from "lucide-react";
 
 export default function SocialLinks() {
   return (
-    <div className="flex justify-center gap-6 mt-8">
+    <div className="flex flex-wrap justify-center gap-4 mt-8">
       <a
-        href="https://wa.me/94771234567"
+        href="https://wa.me/+94763566478"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 text-white bg-green-500 hover:bg-green-600 px-5 py-2.5 rounded-full shadow hover:shadow-lg transition"
+        className="inline-flex items-center gap-2 px-5 py-2.5 border border-green-600 text-green-700 hover:bg-green-50 rounded-lg transition text-sm"
       >
-        <div className="bg-white text-green-600 p-1 rounded-full"><MessageCircle size={16} /></div>
+        <MessageCircle size={16} />
         WhatsApp
       </a>
       <a
-        href="https://facebook.com/saddharmodaya"
+        href="https://web.facebook.com/anandadhm"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 text-white bg-blue-600 hover:bg-blue-700 px-5 py-2.5 rounded-full shadow hover:shadow-lg transition"
+        className="inline-flex items-center gap-2 px-5 py-2.5 border border-blue-600 text-blue-700 hover:bg-blue-50 rounded-lg transition text-sm"
       >
-        <div className="bg-white text-blue-600 p-1 rounded-full"><Facebook size={16} /></div>
+        <Facebook size={16} />
         Facebook
       </a>
     </div>
