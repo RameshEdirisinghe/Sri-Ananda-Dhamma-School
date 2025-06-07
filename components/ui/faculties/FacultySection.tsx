@@ -14,7 +14,7 @@ interface Teacher {
 
 interface Faculty {
   level: string;
-  overview: string;
+  overview?: string; 
   achievements: string[];
   videos: string[];
   photos: string[];
