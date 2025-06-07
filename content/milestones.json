@@ -1,0 +1,54 @@
+{
+  "leftMilestones": [
+    {
+      "year": 1997,
+      "title": "Dhamma School Founded",
+      "desc": "Started with 12 students and 1 teacher under the temple tree.",
+      "image": "/timeline/1997.jpg"
+    },
+    {
+      "year": 2001,
+      "title": "First Annual Sil Program",
+      "desc": "Introduced the tradition of monthly one-day retreats for students.",
+      "image": "/timeline/2001.jpg"
+    },
+    {
+      "year": 2010,
+      "title": "Cultural Day Initiated",
+      "desc": "Started an annual event to celebrate traditional arts and customs.",
+      "image": "/timeline/demo-2010.jpg"
+    },
+    {
+      "year": 2024,
+      "title": "Digital Classroom Launch",
+      "desc": "Introduced online learning platform with video dhamma sessions.",
+      "image": "/timeline/2024.jpg"
+    }
+  ],
+  "rightMilestones": [
+    {
+      "year": 2016,
+      "title": "Zonal Champions",
+      "desc": "Crowned champions in the zonal Dhamma competition.",
+      "image": "/images/event-3.jpg"
+    },
+    {
+      "year": 2017,
+      "title": "Record-breaking Victory",
+      "desc": "Won with 39 out of 41 students securing placements — a new record.",
+      "image": "/timeline/2017.jpg"
+    },
+    {
+      "year": 2024,
+      "title": "Colombo District Best School",
+      "desc": "Recognized as the top Dhamma school in the entire Colombo District.",
+      "image": "/timeline/2024-district.jpg"
+    },
+    {
+      "year": 2024,
+      "title": "All-Island Champions",
+      "desc": "Named the Best Dhamma School in the All-Island Competition.",
+      "image": "/timeline/2024-all-island.jpg"
+    }
+  ]
+}

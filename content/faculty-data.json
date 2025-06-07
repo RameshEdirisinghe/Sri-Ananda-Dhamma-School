@@ -1,0 +1,123 @@
+[
+  {
+    "level": "Dhamma Knowledge Forum",
+    "overview": "A circle of curiosity and wisdom, the Dhamma Knowledge Forum empowers students to explore core Buddhist teachings, philosophy, and ethical living. From exam preparation to deep reflection, learners are guided toward both academic excellence and inner growth.",
+    "achievements": [
+      "2019 All-Island First Place in Dharmacharya – Amasha Sharindi"
+    ],
+    "videos": [],
+    "photos": ["/images/dhamma-knowledge.jpg"],
+    "teachers": [
+      {
+        "name": "Ramesh Jayaratna",
+        "education": "B.Sc Honours in Plant Biotechnology (USJP), Higher Diploma - Daham Sarasavi (USJP), Master's in Biochemistry and Biotechnology (Reading - University of Kelaniya)",
+        "job": "Chemist (Quality Assurance) - Nature's Beauty Creations Ltd",
+        "dhammaRole": "Senior Section Head",
+        "image": "/images/user-male.jpg"
+      },
+      {
+        "name": "Balanuwan Samarasinghe",
+        "education": "Advanced Level",
+        "job": "-",
+        "dhammaRole": "Teacher in Charge of Vinaya (Discipline)",
+        "image": "/images/user-male.jpg"
+      }
+    ]
+  },
+  {
+    "level": "Chanting & Music Circle",
+    "overview": "Blending sacred sound with soulful discipline, this forum nurtures devotional expression through gatha chanting, bhakti geetha, and traditional rhythms. Students develop vocal clarity, group harmony, and spiritual confidence on stage.",
+    "achievements": [
+      "2024 All-Island First Place in Awurudu Chanting – Thidisa Rasindi Erabadda"
+    ],
+    "videos": [],
+    "photos": ["/images/chanting-circle.jpg"],
+    "teachers": [
+      {
+        "name": "H. Randika Sajith",
+        "education": "Advanced Level",
+        "job": "-",
+        "dhammaRole": "Teacher in Charge of Poetry Recitation and Pali Verses",
+        "image": "/images/user-male.jpg"
+      },
+      {
+        "name": "Miran Malitha Kulatunga",
+        "education": "Advanced Level",
+        "job": "-",
+        "dhammaRole": "Teacher in Charge of Poetry Recitation and Pali Verses",
+        "image": "/images/user-male.jpg"
+      },
+      {
+        "name": "Chamodi Surandhika",
+        "education": "Biology Degree Candidate",
+        "job": "-",
+        "dhammaRole": "Teacher in Charge of Poetry Recitation and Pali Verses",
+        "image": "/images/user-female.jpg"
+      }
+    ]
+  },
+  {
+    "level": "Creative Writing Circle",
+    "overview": "A space where imagination meets the Dhamma, this circle encourages young writers to craft poems, essays, and reflections that echo Buddhist values. Expression is celebrated, and every story contributes to a compassionate narrative.",
+    "achievements": [
+      "2024 All-Island Second – Prabasha Jayanidu Wijesakara",
+      "2018 District Runner-Up (Grade 6) – Prabasha Jayanidu Wijesakara"
+    ],
+    "videos": [],
+    "photos": ["/images/writing-circle.jpg"],
+    "teachers": [
+      {
+        "name": "Savini Hiranya",
+        "education": "Applied Data Science Degree Candidate",
+        "job": "-",
+        "dhammaRole": "Class Teacher - Grade 5, Prose Composition Department",
+        "image": "/images/user-female.jpg"
+      },
+      {
+        "name": "W. A. D. Thilakshana Kawindi",
+        "education": "Software Engineering Degree Candidate",
+        "job": "-",
+        "dhammaRole": "Class Teacher - Grade 4, Prose Composition Department",
+        "image": "/images/user-female.jpg"
+      }
+    ]
+  },
+  {
+    "level": "Art & Illustration Forum",
+    "overview": "Students give form to the formless by illustrating the Dhamma through drawing, painting, and visual storytelling. The forum celebrates creative vision while deepening understanding of moral and spiritual themes.",
+    "achievements": [
+      "Artworks featured at school exhibitions and national events"
+    ],
+    "videos": [],
+    "photos": ["/images/art-forum.jpg"],
+    "teachers": [
+      {
+        "name": "G. G. Amasha Sharindi",
+        "education": "BSc Honours (Statistics) Degree Candidate",
+        "job": "-",
+        "dhammaRole": "Class Teacher - Grade 6",
+        "image": "/images/user-female.jpg"
+      }
+    ]
+  },
+  {
+    "level": "Oratory Forum",
+    "overview": "Designed to instill fearless communication, this forum trains students in Dhamma speeches, debates, and public presentations. Participants grow in both voice and virtue, representing the school at zonal, district, and national levels.",
+    "achievements": [
+      "2024 – 5 out of 6 won zonal first places",
+      "2024 – 2 students represented Colombo at All-Island level",
+      "2017 – 3 First Places in Colombo District"
+    ],
+    "videos": [],
+    "photos": ["/images/oratory-forum.jpg"],
+    "teachers": [
+      {
+        "name": "A. K. Oshadha Sandeep Methpriya",
+        "education": "Bachelor of Science Graduate",
+        "job": "Executive Officer - Inqube Solutions",
+        "dhammaRole": "Teacher in Charge of Student Leadership",
+        "image": "/images/user-male.jpg"
+      }
+    ]
+  }
+]

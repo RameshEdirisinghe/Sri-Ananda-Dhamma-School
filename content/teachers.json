@@ -1,0 +1,88 @@
+{
+  "teachers": [
+    {
+      "name": "Principal of Sri Ananda Dhamma School",
+      "education": "BA (BPU), MA (PGIPBS), Royal Pandith (OSS), \"Syamaraja Prize\" (Vidyodaya Pirivena)",
+      "job": "Principal",
+      "dhammaRole": "Principal of the Dhamma School",
+      "image": "/images/thero.jpg"
+    },
+    {
+      "name": "Ramesh Jayaratna",
+      "education": "B.Sc Honours in Plant Biotechnology (USJP), Higher Diploma - Daham Sarasavi (USJP), Master's in Biochemistry and Biotechnology (Reading - University of Kelaniya)",
+      "job": "Chemist (Quality Assurance) - Nature's Beauty Creations Ltd",
+      "dhammaRole": "Senior Section Head",
+      "image": "/images/user-male.jpg"
+    },
+    {
+      "name": "A. K. Oshadha Sandeep Methpriya",
+      "education": "Bachelor of Science Graduate",
+      "job": "Executive Officer - Inqube Solutions",
+      "dhammaRole": "Teacher in Charge of Student Leadership",
+      "image": "/images/user-male.jpg"
+    },
+    {
+      "name": "H. Randika Sajith",
+      "education": "Advanced Level",
+      "job": "-",
+      "dhammaRole": "Teacher in Charge of Poetry Recitation and Pali Verses",
+      "image": "/images/user-male.jpg"
+    },
+    {
+      "name": "Miran Malitha Kulatunga",
+      "education": "Advanced Level",
+      "job": "-",
+      "dhammaRole": "Teacher in Charge of Poetry Recitation and Pali Verses",
+      "image": "/images/user-male.jpg"
+    },
+    {
+      "name": "Tharindu Dhananjaya Perera",
+      "education": "Advanced Level",
+      "job": "Janashakthi Insurance Company - [Specify Position]",
+      "dhammaRole": "Dance Instructor",
+      "image": "/images/tharindu.jpg"
+    },
+    {
+      "name": "Chamodi Surandhika",
+      "education": "Biology Degree Candidate",
+      "job": "-",
+      "dhammaRole": "Teacher in Charge of Poetry Recitation and Pali Verses",
+      "image": "/images/user-female.jpg"
+    },
+    {
+      "name": "Balanuwan Samarasinghe",
+      "education": "Advanced Level",
+      "job": "-",
+      "dhammaRole": "Teacher in Charge of Vinaya (Discipline)",
+      "image": "/images/user-male.jpg"
+    },
+    {
+      "name": "G. W. Harshi Dewrangi de Silva",
+      "education": "Software Engineering Degree Candidate",
+      "job": "-",
+      "dhammaRole": "Class Teacher - Grade 10",
+      "image": "/images/user-female.jpg"
+    },
+    {
+      "name": "G. G. Amasha Sharindi",
+      "education": "BSc Honours (Statistics) Degree Candidate",
+      "job": "-",
+      "dhammaRole": "Class Teacher - Grade 6",
+      "image": "/images/user-female.jpg"
+    },
+    {
+      "name": "Savini Hiranya",
+      "education": "Applied Data Science Degree Candidate",
+      "job": "-",
+      "dhammaRole": "Class Teacher - Grade 5, Prose Composition Department",
+      "image": "/images/user-female.jpg"
+    },
+    {
+      "name": "W. A. D. Thilakshana Kawindi",
+      "education": "Software Engineering Degree Candidate",
+      "job": "-",
+      "dhammaRole": "Class Teacher - Grade 4, Prose Composition Department",
+      "image": "/images/user-female.jpg"
+    }
+  ]
+}

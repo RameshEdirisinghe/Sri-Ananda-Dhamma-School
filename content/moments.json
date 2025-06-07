@@ -1,0 +1,45 @@
+{
+  "achievements": [
+    {
+      "title": "Dhamma School Wins Provincial Quiz",
+      "year": "2022",
+      "type": "competition",
+      "story": "Our team worked every weekend preparing for this moment. The win wasn't just for us, but for every student who believed in unity and knowledge.",
+      "media": "/images/moments.jpg",
+      "isVideo": false
+    },
+    {
+      "title": "Vesak Celebration Highlights",
+      "year": "2023",
+      "type": "event",
+      "story": "The Vesak float, the performances, the chanting... every moment was a piece of peace. This event brought generations together.",
+      "media": "https://youtu.be/chf0jj7Hfg0?feature=shared",
+      "isVideo": true
+    },
+    {
+      "title": "National Merit Recognition",
+      "year": "2021",
+      "type": "award",
+      "story": "Being recognized nationally meant that even a small school like ours was echoing values that matter.",
+      "media": "/assets/national-award.jpg",
+      "isVideo": false
+    }
+  ],
+  "albums": [
+    {
+      "title": "Vesak Ceremony 2023",
+      "year": "2023",
+      "cover": "/images/album-1.jpg"
+    },
+    {
+      "title": "Annual Meditation Retreat",
+      "year": "2022",
+      "cover": "/images/album-2.jpg"
+    },
+    {
+      "title": "Kids’ Talent Show",
+      "year": "2021",
+      "cover": "/images/album-3.jpg"
+    }
+  ]
+}

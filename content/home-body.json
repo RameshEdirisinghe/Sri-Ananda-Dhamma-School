@@ -1,0 +1,42 @@
+{
+  "articles": [
+    {
+      "title": "Island-Wide Victory at Badulla",
+      "image": "/images/articles-1.jpg",
+      "preview": "Ranked No.1 Dhamma School in the All-Island Competition held in Badulla District. A moment of pride for our entire community.",
+      "link": "/articles/all-island-win"
+    },
+    {
+      "title": "Apeksha Hospital Donation Drive",
+      "image": "/images/article-1.jpg",
+      "preview": "Our students and teachers successfully completed a donation program to support the Maharagama Apeksha Hospital.",
+      "link": "/articles/apeksha-donation"
+    },
+    {
+      "title": "Awurudu Festival and Youth Impact",
+      "image": "/images/article-3.jpg",
+      "preview": "This year’s Awurudu celebration was more than tradition—it fostered unity, joy, and emotional well-being among today’s youth.",
+      "link": "/articles/awurudu-youth"
+    }
+  ],
+  "events": [
+    {
+      "title": "Poson Sil Observance Program",
+      "description": "June 12 – One Day Retreat for Poson",
+      "deadline": "5 Days Left",
+      "link": "/images/event-sil.jpg"
+    },
+    {
+      "title": "Poson Week Decoration & Teamwork",
+      "description": "June 13 – Creative Skill Development",
+      "deadline": "6 Days Left",
+      "link": "/images/event-decoration.jpg"
+    },
+    {
+      "title": "House Competition: Opening Ceremony",
+      "description": "June 22 – Spirit & Teamwork Unleashed",
+      "deadline": "15 Days Left",
+      "link": "/images/event-house-opening.jpg"
+    }
+  ]
+}

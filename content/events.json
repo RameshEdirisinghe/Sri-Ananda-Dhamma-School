@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "title": "Poson Sil Observance Program",
+      "date": "2025-06-12T07:00:00",
+      "type": "Religious Program",
+      "description": "A full-day sil program for students and devotees to observe the sacred Poson Poya in reflection and discipline.",
+      "location": "Meditation Hall",
+      "image": "/images/event-1.jpg"
+    },
+    {
+      "title": "Poson Week Decoration & Teamwork Activity",
+      "date": "2025-06-13T09:00:00",
+      "type": "Skill Development",
+      "description": "Collaborative decorating and teamwork session to prepare the temple for the Poson celebrations. A chance to build creativity and unity.",
+      "location": "Temple Premises",
+      "image": "/images/event-2.jpg"
+    },
+    {
+      "title": "House Competition: Opening Ceremony",
+      "date": "2025-06-22T08:30:00",
+      "type": "Competition",
+      "description": "Kickoff to our annual House Competition series! Teams will be introduced, events previewed, and spirit ignited.",
+      "location": "Main Grounds",
+      "image": "/images/event-3.jpg"
+    }
+  ]
+}

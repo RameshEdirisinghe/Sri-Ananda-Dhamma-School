@@ -1,0 +1,169 @@
+{
+  "types": ["books", "papers", "guides", "publications"],
+  "grades": [
+    "Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5",
+    "Grade 6", "Grade 7", "Grade 8", "Grade 9", "Grade 10",
+    "අවසාන", "ධර්මාචාර්‍ය"
+  ],
+  "subjects": ["දහම් දැනුම", "කථික", "ගද්‍ය රචනා", "ගායනා", "චිත්‍ර"],
+  "years": ["2023"],
+  "resources": [
+    {
+      "type": "books",
+      "title": "Grade 1 Buddhism Textbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/textbook-grade1.pdf",
+      "previewable": true,
+      "grade": "Grade 1",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "books",
+      "title": "Grade 2 Buddhism Textbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/textbook-grade2.pdf",
+      "previewable": true,
+      "grade": "Grade 2",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "books",
+      "title": "Grade 3 Buddhism Textbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/textbook-grade3.pdf",
+      "previewable": true,
+      "grade": "Grade 3",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "books",
+      "title": "Grade 4 Buddhism Textbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/textbook-grade4.pdf",
+      "previewable": true,
+      "grade": "Grade 4",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "books",
+      "title": "Grade 5 Buddhism Textbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/textbook-grade5.pdf",
+      "previewable": true,
+      "grade": "Grade 5",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "books",
+      "title": "Grade 6 Buddhism Textbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/textbook-grade6.pdf",
+      "previewable": true,
+      "grade": "Grade 6",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "books",
+      "title": "Grade 7 Buddhism Textbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/textbook-grade7.pdf",
+      "previewable": true,
+      "grade": "Grade 7",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "books",
+      "title": "Grade 8 Buddhism Textbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/textbook-grade8.pdf",
+      "previewable": true,
+      "grade": "Grade 8",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "books",
+      "title": "Grade 9 Buddhism Textbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/textbook-grade9.pdf",
+      "previewable": true,
+      "grade": "Grade 9",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "books",
+      "title": "Grade 10 Buddhism Textbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/textbook-grade10.pdf",
+      "previewable": true,
+      "grade": "Grade 10",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "books",
+      "title": "අවසාන Buddhism Textbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/textbook-අවසාන.pdf",
+      "previewable": true,
+      "grade": "අවසාන",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "books",
+      "title": "ධර්මාචාර්‍ය Buddhism Textbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/textbook-ධර්මාචාර්‍ය.pdf",
+      "previewable": true,
+      "grade": "ධර්මාචාර්‍ය",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "guides",
+      "title": "Grade 7 කථික Guide",
+      "fileType": "pdf",
+      "fileUrl": "/resources/guide-කථික-grade7.pdf",
+      "grade": "Grade 7",
+      "subject": "කථික",
+      "year": "2023"
+    },
+    {
+      "type": "guides",
+      "title": "Grade 10 ගද්‍ය රචනා Guide",
+      "fileType": "pdf",
+      "fileUrl": "/resources/guide-ගද්‍යරචනා-grade10.pdf",
+      "grade": "Grade 10",
+      "subject": "ගද්‍ය රචනා",
+      "year": "2023"
+    },
+
+    {
+      "type": "papers",
+      "title": "2023 Grade 9 Buddhism Paper",
+      "fileType": "pdf",
+      "fileUrl": "/resources/paper-grade9.pdf",
+      "grade": "Grade 9",
+      "subject": "දහම් දැනුම",
+      "year": "2023"
+    },
+    {
+      "type": "guides",
+      "title": "Art (චිත්‍ර) Handbook",
+      "fileType": "pdf",
+      "fileUrl": "/resources/guide-art.pdf",
+      "grade": "All",
+      "subject": "චිත්‍ර",
+      "year": "2023"
+    }
+  ]
+}
