@@ -1,23 +1,24 @@
-import { BookOpenText, Users } from 'lucide-react';
-import { motion } from 'framer-motion';
-import TeacherCard from './TeacherCard';
-import FacultyAchievements from './FacultyAchievements';
-import FacultyMedia from './FacultyMedia';
+import { BookOpenText, Users } from "lucide-react";
+import { motion } from "framer-motion";
+import TeacherCard from "./TeacherCard";
+import FacultyAchievements from "./FacultyAchievements";
+import FacultyMedia from "./FacultyMedia";
 
 interface Teacher {
   name: string;
-  education: string;
-  job: string;
-  dhammaRole: string;
-  image: string;
+  image?: string;
+  dhammaRole?: string;
+  education?: string;
+  job?: string;
+  testimonial?: string;
 }
 
 interface Faculty {
   level: string;
-  overview?: string; 
-  achievements: string[];
-  videos: string[];
-  photos: string[];
+  overview?: string;
+  achievements?: string[];
+  videos?: string[];
+  photos?: string[];
   teachers: Teacher[];
 }
 
@@ -55,8 +56,11 @@ export default function FacultySection({ faculty }: { faculty: Faculty }) {
         </div>
       </motion.div>
 
-      <FacultyAchievements items={faculty.achievements} />
-      <FacultyMedia videos={faculty.videos} photos={faculty.photos} />
+      <FacultyAchievements items={faculty.achievements ?? []} />
+      <FacultyMedia
+        videos={faculty.videos ?? []}
+        photos={faculty.photos ?? []}
+      />
     </div>
   );
 }

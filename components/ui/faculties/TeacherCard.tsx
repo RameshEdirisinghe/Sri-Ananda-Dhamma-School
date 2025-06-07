@@ -1,17 +1,23 @@
-import { FC } from 'react';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { UserCircle } from 'lucide-react';
+import { FC } from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { UserCircle } from "lucide-react";
 
 interface Teacher {
   name: string;
-  dhammaRole: string;
+  dhammaRole?: string;
   professionalRole?: string;
   education?: string;
-  image: string;
+  image?: string;
 }
 
-const TeacherCard: FC<Teacher> = ({ name, dhammaRole, professionalRole, education, image }) => {
+const TeacherCard: FC<Teacher> = ({
+  name,
+  dhammaRole = "Dhamma Teacher",
+  professionalRole,
+  education,
+  image,
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -33,7 +39,6 @@ const TeacherCard: FC<Teacher> = ({ name, dhammaRole, professionalRole, educatio
         )}
 
         <h3 className="mt-4 text-lg font-semibold text-textPrimary">{name}</h3>
-
         <p className="text-sm text-primary font-medium">{dhammaRole}</p>
 
         {professionalRole && (
@@ -41,7 +46,9 @@ const TeacherCard: FC<Teacher> = ({ name, dhammaRole, professionalRole, educatio
         )}
 
         {education && (
-          <p className="text-xs text-gray-500 italic mt-1 text-center">{education}</p>
+          <p className="text-xs text-gray-500 italic mt-1 text-center">
+            {education}
+          </p>
         )}
       </div>
     </motion.div>
