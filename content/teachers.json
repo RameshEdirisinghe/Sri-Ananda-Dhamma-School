@@ -29,18 +29,25 @@
       "image": "/images/rameshj.jpg"
     },
     {
+      "name": "Kushantha Laknuwan",
+      "education": "BA (Hons) in Buddhist Studies, PGD in Education (UOC)",
+      "job": "",
+      "dhammaRole": "Teacher in Charge of Dhamma Knowledge",
+      "image": "/images/kushantha.jpg"
+    },
+        {
       "name": "A. K. Oshadha Sandeep Methpriya",
       "education": "Bachelor of Science Graduate",
       "job": "Executive Officer - Inqube Solutions",
       "dhammaRole": "Teacher in Charge of Student Leadership",
-      "image": "/images/osada.jpg"
+      "image": "/images/osanda.jpg"
     },
     {
       "name": "H. Randika Sajith",
       "education": "Advanced Level",
       "job": "-",
       "dhammaRole": "Teacher in Charge of Poetry Recitation and Pali Verses",
-      "image": "/images/randika.jpg"
+      "image": "/images/randika-1.jpg"
     },
     {
       "name": "Balanuwan Samarasinghe",
@@ -96,7 +103,7 @@
       "education": "BSc Honours (Statistics) Degree Candidate",
       "job": "-",
       "dhammaRole": "Class Teacher - Grade 6",
-      "image": "/images/amaasha.jpg"
+      "image": "/images/amasha-1.jpg"
     },
     {
       "name": "Savini Hiranya",
