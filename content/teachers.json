@@ -1,39 +1,67 @@
 {
   "teachers": [
     {
-      "name": "Principal of Sri Ananda Dhamma School",
+      "name": "Ven. Bulathsinhala Gnanaratana",
       "education": "BA (BPU), MA (PGIPBS), Royal Pandith (OSS), \"Syamaraja Prize\" (Vidyodaya Pirivena)",
-      "job": "Principal",
+      "job": "Thero",
       "dhammaRole": "Principal of the Dhamma School",
       "image": "/images/thero.jpg"
+    },
+    {
+      "name": "I.A.D. Samila Tharanga Illeperuma",
+      "education": "Advanced Level",
+      "job": "-",
+      "dhammaRole": "Vice Principal",
+      "image": "/images/samila.jpg"
+    },
+    {
+      "name": "N.G. Samantha Swarnamali",
+      "education": "A/L and Dharmacharya",
+      "job": "-",
+      "dhammaRole": "Head of Junior Section",
+      "image": "/images/smantha.jpg"
     },
     {
       "name": "Ramesh Jayaratna",
       "education": "B.Sc Honours in Plant Biotechnology (USJP), Higher Diploma - Daham Sarasavi (USJP), Master's in Biochemistry and Biotechnology (Reading - University of Kelaniya)",
       "job": "Chemist (Quality Assurance) - Nature's Beauty Creations Ltd",
       "dhammaRole": "Senior Section Head",
-      "image": "/images/user-male.jpg"
+      "image": "/images/rameshj.jpg"
     },
     {
       "name": "A. K. Oshadha Sandeep Methpriya",
       "education": "Bachelor of Science Graduate",
       "job": "Executive Officer - Inqube Solutions",
       "dhammaRole": "Teacher in Charge of Student Leadership",
-      "image": "/images/user-male.jpg"
+      "image": "/images/osada.jpg"
     },
     {
       "name": "H. Randika Sajith",
       "education": "Advanced Level",
       "job": "-",
       "dhammaRole": "Teacher in Charge of Poetry Recitation and Pali Verses",
-      "image": "/images/user-male.jpg"
+      "image": "/images/randika.jpg"
+    },
+    {
+      "name": "Balanuwan Samarasinghe",
+      "education": "Advanced Level",
+      "job": "-",
+      "dhammaRole": "Teacher in Charge of Vinaya (Discipline)",
+      "image": "/images/balanuwan.jpg"
+    },
+        {
+      "name": "Ushan Madushanka Gallage",
+      "education": "B.Sc. Business Administration Degree (University of Sri Jayewardenepura)",
+      "job": "Senior Sales Executive - WURTH LANKA (PVT) LTD",
+      "dhammaRole": "Deputy Principal (Administrative)",
+      "image": "/images/ushan.jpg"
     },
     {
       "name": "Miran Malitha Kulatunga",
       "education": "Advanced Level",
       "job": "-",
       "dhammaRole": "Teacher in Charge of Poetry Recitation and Pali Verses",
-      "image": "/images/user-male.jpg"
+      "image": "/images/miran.jpg"
     },
     {
       "name": "Tharindu Dhananjaya Perera",
@@ -47,56 +75,49 @@
       "education": "Biology Degree Candidate",
       "job": "-",
       "dhammaRole": "Teacher in Charge of Poetry Recitation and Pali Verses",
-      "image": "/images/user-female.jpg"
-    },
-    {
-      "name": "Balanuwan Samarasinghe",
-      "education": "Advanced Level",
-      "job": "-",
-      "dhammaRole": "Teacher in Charge of Vinaya (Discipline)",
-      "image": "/images/user-male.jpg"
+      "image": "/images/chamodi.jpg"
     },
     {
       "name": "G. W. Harshi Dewrangi de Silva",
       "education": "Software Engineering Degree Candidate",
       "job": "-",
       "dhammaRole": "Class Teacher - Grade 10",
-      "image": "/images/user-female.jpg"
+      "image": "/images/harshi.jpg"
     },
     {
       "name": "G. G. Amasha Sharindi",
       "education": "BSc Honours (Statistics) Degree Candidate",
       "job": "-",
       "dhammaRole": "Class Teacher - Grade 6",
-      "image": "/images/user-female.jpg"
+      "image": "/images/amaasha.jpg"
     },
     {
       "name": "Savini Hiranya",
       "education": "Applied Data Science Degree Candidate",
       "job": "-",
       "dhammaRole": "Class Teacher - Grade 5, Prose Composition Department",
-      "image": "/images/user-female.jpg"
+      "image": "/images/savini.jpg"
     },
     {
       "name": "W. A. D. Thilakshana Kawindi",
       "education": "Software Engineering Degree Candidate",
       "job": "-",
       "dhammaRole": "Class Teacher - Grade 4, Prose Composition Department",
-      "image": "/images/user-female.jpg"
+      "image": "/images/thrilakshana.jpg"
     },
     {
       "name": "Hiruni Avishka Denipitiya",
       "education": "LLB (Hons) - University of Colombo",
       "job": "-",
       "dhammaRole": "Teacher in Charge of Oratory Forum",
-      "image": "/images/user-female.jpg"
+      "image": "/images/hiruni.jpg"
     },
     {
       "name": "Thushari Tharanga Liyanage",
       "education": "Diploma in Montessori Method of Education (Teaching)",
       "job": "-",
       "dhammaRole": "Class Teacher - Grade 1",
-      "image": "/images/user-female.jpg"
+      "image": "/images/thushari.jpg"
     },
     {
       "name": "Ramesh Edirisinghe",
@@ -106,11 +127,26 @@
       "image": "/images/ramesh.jpg"
     },
     {
+      "name": "Aadhya Wijesekara",
+      "education": "BSc in Computer Science (Undergraduate) – NIBM, Dharmacharya D5",
+      "job": "Trainee Software Engineer – Dialog Axiata",
+      "dhammaRole": "Dhamma School Volunteer / Tech & Academic Assistant",
+      "image": "/images/aadhya.jpg"
+    },
+    {
+      "name": "K.N. Sandamali Wickramasinghe",
+      "education": "Master’s Degree – University of Kelaniya",
+      "job": "Development Officer – Ministry of Tourism and Lands",
+      "dhammaRole": "Class Teacher – Grade 2",
+      "image": "/images/sadamali.jpg"
+    },
+    {
       "name": "Chandupa Lokuliyana",
       "education": "Undergraduate - University of Moratuwa",
       "job": "Software Engineer Intern - Prologics",
       "dhammaRole": "Teacher in Charge of Oratory Forum",
-      "image": "/images/user-male.jpg"
+      "image": "/images/chandupa.jpg"
     }
   ]
+  
 }
