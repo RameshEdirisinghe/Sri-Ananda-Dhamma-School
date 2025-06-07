@@ -1,5 +1,5 @@
 import ContentLayout from '@/components/layout/ContentLayout';
-import FacultyTabs from '@/components/ui/faculties/FacultyTabs';
+import FacultyTabs from '@/components/ui/sections/FacultyTabs';
 import { Users } from 'lucide-react';
 
 export default function FacultiesPage() {

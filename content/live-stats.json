@@ -1,6 +1,6 @@
 [
-  { "label": "Active Students", "value": 850, "icon": "GraduationCap" },
-  { "label": "Dhamma Books", "value": 350, "icon": "Book" },
-  { "label": "Awards Won", "value": 60, "icon": "Trophy" },
-  { "label": "Years Running", "value": 27, "icon": "Calendar" }
+  { "label": "Active Students", "value": 350, "icon": "GraduationCap" },
+  { "label": "Dhamma Books", "value": 20, "icon": "Book" },
+  { "label": "Awards Won", "value": 20, "icon": "Trophy" },
+  { "label": "Years Running", "value": 39, "icon": "Calendar" }
 ]
