@@ -5,8 +5,8 @@ import AlbumsGrid from "./AlbumsGrid";
 import { motion } from "framer-motion";
 
 const tabs = [
-  { id: "achievements", label: "🏆 Achievements" },
-  { id: "albums", label: "📸 Albums" },
+  { id: "achievements", label: "Achievements" },
+  { id: "albums", label: "Albums" },
 ];
 
 export default function MomentsTabs() {

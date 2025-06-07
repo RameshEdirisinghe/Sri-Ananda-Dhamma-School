@@ -30,7 +30,7 @@ export default function LiveStats() {
     <section id="live-stats" className="max-w-6xl mx-auto py-16 px-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
         {(stats as Stat[]).map((stat, index) => {
-          const Icon = LucideIcons[stat.icon];
+          const Icon = LucideIcons[stat.icon] as React.FC<React.SVGProps<SVGSVGElement>>;
           return (
             <motion.div
               key={index}

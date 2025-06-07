@@ -1,27 +1,27 @@
 {
   "achievements": [
     {
-      "title": "Dhamma School Wins Provincial Quiz",
-      "year": "2022",
+      "title": "Island-Wide Victory at Badulla – All-Island Dhamma School Championship",
+      "year": "2024",
       "type": "competition",
-      "story": "Our team worked every weekend preparing for this moment. The win wasn't just for us, but for every student who believed in unity and knowledge.",
+      "story": "Ranked No.1 Dhamma School in the All-Island Competition held in Badulla District. Months of weekend practices, teamwork, and discipline led to this proud victory — a symbol of unity, wisdom, and excellence across our entire school community.",
       "media": "/images/moments.jpg",
       "isVideo": false
     },
     {
-      "title": "Vesak Celebration Highlights",
-      "year": "2023",
-      "type": "event",
-      "story": "The Vesak float, the performances, the chanting... every moment was a piece of peace. This event brought generations together.",
-      "media": "https://youtu.be/chf0jj7Hfg0?feature=shared",
-      "isVideo": true
+      "title": "All-Island First Place – Thidisa Rasindi (Pali Gatha Gayana)",
+      "year": "2024",
+      "type": "award",
+      "story": "In the same All-Island competition at Badulla, Thidisa Rasindi brought individual honor by securing first place in the 'Awasana' category under Pali Gatha Gayana — showcasing exceptional pronunciation, emotion, and discipline.",
+      "media": "/images/thidisa.jpg",
+      "isVideo": false
     },
     {
-      "title": "National Merit Recognition",
-      "year": "2021",
-      "type": "award",
-      "story": "Being recognized nationally meant that even a small school like ours was echoing values that matter.",
-      "media": "/assets/national-award.jpg",
+      "title": "A Record-Breaking Performance – 39 Wins out of 41",
+      "year": "2017",
+      "type": "competition",
+      "story": "In the 2017 zonal-level Dhamma school competitions, our institute made history by achieving victories in 39 out of 41 competition categories — an all-time record that highlighted the depth of talent across every forum and age group.",
+      "media": "/images/hero-3.jpg",
       "isVideo": false
     }
   ],
@@ -32,13 +32,13 @@
       "cover": "/images/album-1.jpg"
     },
     {
-      "title": "Annual Meditation Retreat",
+      "title": "Annual Katina Program",
       "year": "2022",
       "cover": "/images/album-2.jpg"
     },
     {
-      "title": "Kids’ Talent Show",
-      "year": "2021",
+      "title": "Awurudu Festival 2024",
+      "year": "2024",
       "cover": "/images/album-3.jpg"
     }
   ]

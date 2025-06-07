@@ -11,33 +11,32 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: send form somewhere
     setSubmitted(true);
   };
 
   return (
-    <div className="bg-white rounded-2xl p-6 shadow-md border space-y-4 max-w-2xl mx-auto">
-      <h2 className="text-xl font-semibold font-serif mb-2">📝 Send a Message</h2>
-      <hr className="border-orange-200" />
+    <div className="bg-primary-light border border-neutral-border rounded-xl p-8 shadow-soft max-w-2xl mx-auto space-y-6">
+      <h2 className="text-xl font-serif font-semibold text-ui-heading">Send Us a Message</h2>
+      <hr className="border-neutral-border" />
 
       {submitted ? (
-        <p className="text-green-600 font-medium">✅ Message sent successfully!</p>
+        <p className="text-state-success font-medium">Your message has been successfully sent.</p>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-5">
           <input
             name="name"
-            placeholder="Your Name"
+            placeholder="Full Name"
             value={form.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-400 focus:outline-none"
+            className="w-full border border-neutral-border bg-white rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:outline-none"
           />
           <input
             name="subject"
             placeholder="Subject"
             value={form.subject}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-400 focus:outline-none"
+            className="w-full border border-neutral-border bg-white rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:outline-none"
           />
           <textarea
             name="message"
@@ -46,13 +45,13 @@ export default function ContactForm() {
             value={form.message}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-400 focus:outline-none"
+            className="w-full border border-neutral-border bg-white rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:outline-none"
           />
           <button
             type="submit"
-            className="bg-gradient-to-r from-orange-500 to-orange-600 text-white font-medium px-6 py-3 rounded-xl hover:brightness-110 transition shadow"
+            className="bg-primary text-white font-medium px-6 py-3 rounded-lg hover:brightness-105 transition"
           >
-            ✉️ Send Message
+            Send Message
           </button>
         </form>
       )}

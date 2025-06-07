@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Right: Social Links */}
         <div className="flex gap-6 items-center text-primary">
           <Link
-            href="https://www.youtube.com"
+            href="https://www.youtube.com/@anadadamrawaya"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
@@ -23,7 +23,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            href="https://www.facebook.com"
+            href="https://web.facebook.com/anandadhm"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -33,7 +33,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            href="https://wa.me/+9475855818"
+            href="https://wa.me/+94763566478"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"

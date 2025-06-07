@@ -1,10 +1,28 @@
-import { BookOpenText, Users } from 'lucide-react';
-import { motion } from 'framer-motion';
-import TeacherCard from './TeacherCard';
-import FacultyAchievements from './FacultyAchievements';
-import FacultyMedia from './FacultyMedia';
+import { BookOpenText, Users } from "lucide-react";
+import { motion } from "framer-motion";
+import TeacherCard from "./TeacherCard";
+import FacultyAchievements from "./FacultyAchievements";
+import FacultyMedia from "./FacultyMedia";
 
-export default function FacultySection({ faculty }: any) {
+interface Teacher {
+  name: string;
+  image?: string;
+  dhammaRole?: string;
+  education?: string;
+  job?: string;
+  testimonial?: string;
+}
+
+interface Faculty {
+  level: string;
+  overview?: string;
+  achievements?: string[];
+  videos?: string[];
+  photos?: string[];
+  teachers: Teacher[];
+}
+
+export default function FacultySection({ faculty }: { faculty: Faculty }) {
   return (
     <div className="space-y-12">
       {/* Overview */}
@@ -32,14 +50,17 @@ export default function FacultySection({ faculty }: any) {
           <h2 className="text-lg sm:text-xl">Teachers</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {faculty.teachers.map((t: any) => (
+          {faculty.teachers.map((t) => (
             <TeacherCard key={t.name} {...t} />
           ))}
         </div>
       </motion.div>
 
-      <FacultyAchievements items={faculty.achievements} />
-      <FacultyMedia videos={faculty.videos} photos={faculty.photos} />
+      <FacultyAchievements items={faculty.achievements ?? []} />
+      <FacultyMedia
+        videos={faculty.videos ?? []}
+        photos={faculty.photos ?? []}
+      />
     </div>
   );
 }
