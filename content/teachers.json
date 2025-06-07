@@ -22,8 +22,8 @@
       "image": "/images/smantha.jpg"
     },
     {
-      "name": "Ramesh Jayaratna",
-      "education": "B.Sc Honours in Plant Biotechnology (USJP), Higher Diploma - Daham Sarasavi (USJP), Master's in Biochemistry and Biotechnology (Reading - University of Kelaniya)",
+      "name": "Ramesh Jayarathne",
+      "education": "B.Sc Honours in Plant Biotechnology (USJ), Higher Diploma - Daham Sarasavi (USJP), Master's in Biochemistry and Biotechnology (Reading - University of Kelaniya)",
       "job": "Chemist (Quality Assurance) - Nature's Beauty Creations Ltd",
       "dhammaRole": "Senior Section Head",
       "image": "/images/rameshj.jpg"
@@ -51,7 +51,7 @@
     },
         {
       "name": "Ushan Madushanka Gallage",
-      "education": "B.Sc. Business Administration Degree (University of Sri Jayewardenepura)",
+      "education": "B.Sc. Business Administration Degree (USJ)",
       "job": "Senior Sales Executive - WURTH LANKA (PVT) LTD",
       "dhammaRole": "Deputy Principal (Administrative)",
       "image": "/images/ushan.jpg"
@@ -62,6 +62,13 @@
       "job": "-",
       "dhammaRole": "Teacher in Charge of Poetry Recitation and Pali Verses",
       "image": "/images/miran.jpg"
+    },
+        {
+      "name": "Sandaruwan Vithanage",
+      "education": "Bachelor of Science Graduate (USJ)",
+      "job": "-",
+      "dhammaRole": "Teacher in Charge of Arts & Aesthetics",
+      "image": "/images/sadaruwan.jpg"
     },
     {
       "name": "Tharindu Dhananjaya Perera",
@@ -119,12 +126,26 @@
       "dhammaRole": "Class Teacher - Grade 1",
       "image": "/images/thushari.jpg"
     },
+        {
+      "name": "Ironika Wijesinghe",
+      "education": "Diploma in Montessori Method of Education (Teaching)",
+      "job": "-",
+      "dhammaRole": "Class Teacher - Grade 3",
+      "image": "/images/ironika.jpg"
+    },
     {
       "name": "Ramesh Edirisinghe",
       "education": "Undergraduate - University of Moratuwa",
       "job": "Software Engineer Intern - Residue",
       "dhammaRole": "Teacher in Charge of Oratory Forum",
       "image": "/images/ramesh.jpg"
+    },
+        {
+      "name": "Uvindu Dhanujaya",
+      "education": "Undergraduate - University of Jayawardenapura",
+      "job": "",
+      "dhammaRole": "Teacher in Charge of Poetry Recitation and Pali Verse",
+      "image": "/images/Uvindu.jpg"
     },
     {
       "name": "Aadhya Wijesekara",

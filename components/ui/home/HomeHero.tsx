@@ -90,7 +90,7 @@ export default function HomeHero() {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="mt-8"
         >
-          <Link href="/faculties">
+          <Link href="/about">
             <button className="bg-accent px-6 py-3 text-white rounded-full font-medium shadow hover:bg-[#a3855c] transition">
               {heroData.cta}
             </button>
