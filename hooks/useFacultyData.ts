@@ -3,9 +3,10 @@ import facultyData from "@/content/faculty-data.json";
 
 export interface Teacher {
   name: string;
-  photo: string;
-  title: string;
-  started: string;
+  education: string;
+  job: string;
+  dhammaRole: string;
+  image: string;
   badge?: string;
   testimonial?: string;
 }
