@@ -19,7 +19,7 @@ export default function QuoteBubbles() {
             transition={{ delay: i * 0.15, duration: 0.5, ease: "easeOut" }}
           >
             <MessageSquareQuote className="w-10 h-10 text-primary/30 mb-2" />
-            <span className="text-lg md:text-xl italic text-neutral-soft leading-relaxed">"{quote}"</span>
+            <span className="text-lg md:text-xl italic text-neutral-soft leading-relaxed">&quot;{quote}&quot;</span>
           </motion.div>
         ))}
       </div>

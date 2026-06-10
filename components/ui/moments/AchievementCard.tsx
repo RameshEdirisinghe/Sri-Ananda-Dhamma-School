@@ -72,7 +72,7 @@ const AchievementCard: FC<Props> = ({ title, year, type, story, media, isVideo }
           </div>
 
           <p className="text-neutral-soft text-sm leading-relaxed line-clamp-3 italic opacity-80">
-            "{story.slice(0, 120)}..."
+            &quot;{story.slice(0, 120)}...&quot;
           </p>
 
           <div className="pt-2 flex items-center justify-between">

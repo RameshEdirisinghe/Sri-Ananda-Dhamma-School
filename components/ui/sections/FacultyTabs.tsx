@@ -59,7 +59,7 @@ export default function FacultyTabs() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const squads = useMemo(() => {
-    const grouped: Record<string, any[]> = {};
+    const grouped: Record<string, typeof teachersData.teachers[0][]> = {};
     
     // Initialize groups based on squadOrder to ensure they exist even if empty
     squadOrder.forEach(s => grouped[s] = []);
@@ -197,7 +197,7 @@ export default function FacultyTabs() {
 
               {/* Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-                {activeSquad.teachers.map((t: any, index: number) => (
+                {activeSquad.teachers.map((t: typeof teachersData.teachers[0], index: number) => (
                   <motion.div
                     key={t.name}
                     initial={{ opacity: 0, scale: 0.95 }}
