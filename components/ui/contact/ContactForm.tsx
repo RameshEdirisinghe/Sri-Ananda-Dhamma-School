@@ -19,7 +19,7 @@ export default function ContactForm() {
     <div className="bg-white border border-neutral-100/60 rounded-[2rem] p-8 md:p-12 shadow-[0_2px_15px_rgba(0,0,0,0.03)] max-w-2xl mx-auto">
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold text-neutral mb-3 tracking-tight">Send Us a Message</h2>
-        <p className="text-neutral-soft text-sm font-medium">Have a question or feedback? We'd love to hear from you.</p>
+        <p className="text-neutral-soft text-sm font-medium">Have a question or feedback? We&apos;d love to hear from you.</p>
         <div className="w-12 h-1 bg-primary/20 mx-auto mt-6 rounded-full" />
       </div>
 
@@ -35,7 +35,7 @@ export default function ContactForm() {
              </svg>
           </div>
           <h3 className="text-xl font-bold text-neutral mb-2">Message Sent!</h3>
-          <p className="text-neutral-soft">Thank you for reaching out. We'll get back to you soon.</p>
+          <p className="text-neutral-soft">Thank you for reaching out. We&apos;ll get back to you soon.</p>
           <button 
             onClick={() => setSubmitted(false)}
             className="mt-8 text-primary font-bold text-sm hover:underline"

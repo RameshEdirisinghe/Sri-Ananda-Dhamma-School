@@ -44,7 +44,7 @@ export default function OriginStory() {
             >
               <path d="M9.5 11C10.3284 11 11 10.3284 11 9.5V5.5C11 4.67157 10.3284 4 9.5 4H6.5C5.67157 4 5 4.67157 5 5.5V9.5C5 10.3284 5.67157 11 6.5 11H7V13H5V20H10V13H8V11H9.5ZM18.5 11C19.3284 11 20 10.3284 20 9.5V5.5C20 4.67157 19.3284 4 18.5 4H15.5C14.6716 4 14 4.67157 14 5.5V9.5C14 10.3284 14.6716 11 15.5 11H16V13H14V20H19V13H17V11H18.5Z" />
             </svg>
-            <p className="ml-10 relative z-10">"{quote}"</p>
+            <p className="ml-10 relative z-10">&quot;{quote}&quot;</p>
           </blockquote>
         </div>
       </div>
