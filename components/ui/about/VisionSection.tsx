@@ -9,14 +9,14 @@ export default function VisionSection() {
   }>('vision');
 
   return (
-    <section className="py-24 px-4 bg-orange-50 text-center">
-      <h2 className="text-2xl font-bold text-primary mb-6">{title}</h2>
-      <p className="max-w-3xl mx-auto text-neutral mb-10">{description}</p>
-      <div className="flex flex-wrap justify-center gap-4">
+    <section className="py-24 px-4 bg-[#FAF9F6] text-center">
+      <h2 className="text-3xl md:text-4xl font-bold text-neutral mb-6 tracking-tight">{title}</h2>
+      <p className="max-w-3xl mx-auto text-lg text-neutral-soft leading-relaxed mb-12">{description}</p>
+      <div className="flex flex-wrap justify-center gap-5">
         {values.map((val, i) => (
           <div
             key={i}
-            className="px-6 py-3 bg-white rounded-full shadow text-primary font-semibold hover:scale-105 transition"
+            className="px-8 py-4 bg-white rounded-full shadow-sm hover:shadow-md border border-neutral-100/80 text-neutral font-bold tracking-wide hover:-translate-y-1 transition-all duration-300"
           >
             {val}
           </div>

@@ -1,4 +1,4 @@
-import { BookOpenText, Users } from "lucide-react";
+import { Users } from "lucide-react";
 import { motion } from "framer-motion";
 import TeacherCard from "./TeacherCard";
 import FacultyAchievements from "./FacultyAchievements";
@@ -25,17 +25,29 @@ interface Faculty {
 export default function FacultySection({ faculty }: { faculty: Faculty }) {
   return (
     <div className="space-y-12">
-      {/* Overview */}
+      {/* Center-Aligned Blended Header */}
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
+        initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+        className="flex flex-col items-center text-center max-w-3xl mx-auto mb-12 md:mb-16"
       >
-        <div className="flex items-center gap-2 mb-2 text-primary font-semibold">
-          <BookOpenText className="w-5 h-5" />
-          <h2 className="text-lg sm:text-xl">Overview</h2>
+        {/* Minimalist Top Accent */}
+        <div className="flex gap-1.5 mb-5 opacity-80">
+          <span className="w-1.5 h-1.5 rounded-sm bg-primary/30" />
+          <span className="w-1.5 h-1.5 rounded-sm bg-primary/60" />
+          <span className="w-1.5 h-1.5 rounded-sm bg-primary" />
         </div>
-        <p className="text-textSecondary max-w-prose">{faculty.overview}</p>
+        
+        <h2 className="text-3xl md:text-5xl font-black text-neutral mb-4 tracking-tighter uppercase relative group">
+          {faculty.level}
+        </h2>
+        
+        {faculty.overview && (
+          <p className="text-base md:text-lg text-neutral-soft leading-relaxed max-w-2xl px-4">
+            {faculty.overview}
+          </p>
+        )}
       </motion.div>
 
       {/* Teachers */}

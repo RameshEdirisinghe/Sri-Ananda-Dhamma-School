@@ -1,8 +1,9 @@
 "use client";
 
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, Filter, Trash2 } from "lucide-react";
 import { useState } from "react";
 import { useResourcesData } from "@/hooks/useResourcesData";
+import { motion, AnimatePresence } from "framer-motion";
 
 type FilterCategory = "grade" | "subject" | "year";
 
@@ -19,13 +20,11 @@ export default function ResourceFilter({
   activeFilters?: ActiveFilters;
   setActiveFilters?: React.Dispatch<React.SetStateAction<ActiveFilters>>;
 }) {
-
   const { grades, subjects, years } = useResourcesData();
-  const [showFilters, setShowFilters] = useState(false);
+  const [showFilters, setShowFilters] = useState(true);
 
-  // ✅ Guard against undefined data
   if (!grades?.length || !subjects?.length || !years?.length) {
-    return <p className="text-sm text-muted">Loading filters...</p>;
+    return <p className="text-sm text-muted animate-pulse">Initializing filters...</p>;
   }
 
   const toggleFilter = (category: FilterCategory, value: string) => {
@@ -35,77 +34,89 @@ export default function ResourceFilter({
     }));
   };
 
-  const getButtonStyle = (active: boolean) =>
-    `px-4 py-2 text-sm rounded-full border transition ${
-      active
-        ? "bg-primary text-white border-primary"
-        : "bg-white text-textSecondary border-borderGray hover:bg-muted"
-    }`;
-
-  const chunkArray = (arr: string[], size: number) => {
-    const result = [];
-    for (let i = 0; i < arr.length; i += size) {
-      result.push(arr.slice(i, i + size));
-    }
-    return result;
+  const clearFilters = () => {
+    setActiveFilters({ grade: null, subject: null, year: null });
   };
 
-  return (
-    <div className="w-full mb-8">
-      <button
-        onClick={() => setShowFilters(!showFilters)}
-        className="flex items-center gap-2 text-primary font-medium mb-4"
-      >
-        {showFilters ? "Hide Filters" : "Show Filters"}
-        {showFilters ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-      </button>
+  const hasActiveFilters = Object.values(activeFilters).some((v) => v !== null);
 
-      <div
-        className={`grid gap-4 transition-all duration-300 overflow-hidden ${
-          showFilters ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        {/* Grade Filters (chunked into rows of 6) */}
-        {chunkArray(grades?.filter(Boolean) ?? [], 6).map((gradeGroup, i) => (
-          <div key={i} className="flex flex-wrap gap-3 mb-2">
-            {gradeGroup.map((grade) => (
-              <button
-                key={grade}
-                className={getButtonStyle(activeFilters.grade === grade)}
-                onClick={() => toggleFilter("grade", grade)}
-              >
-                {grade}
-              </button>
-            ))}
-          </div>
+  const getButtonStyle = (active: boolean) =>
+    `px-4 py-2 text-xs font-bold rounded-full border transition-all duration-300 ${
+      active
+        ? "bg-primary text-white border-primary shadow-md transform scale-105"
+        : "bg-white text-neutral-soft border-neutral-200 hover:border-primary/50 hover:text-primary"
+    }`;
+
+  const FilterSection = ({ 
+    title, 
+    items, 
+    category 
+  }: { 
+    title: string; 
+    items: string[]; 
+    category: FilterCategory 
+  }) => (
+    <div className="space-y-3">
+      <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-neutral-muted flex items-center gap-2">
+        <span className="w-1.5 h-1.5 rounded-full bg-primary/40" />
+        {title}
+      </h3>
+      <div className="flex flex-wrap gap-2">
+        {items.map((item) => (
+          <button
+            key={item}
+            className={getButtonStyle(activeFilters[category] === item)}
+            onClick={() => toggleFilter(category, item)}
+          >
+            {item}
+          </button>
         ))}
-
-        {/* Subject Filters */}
-        <div className="flex flex-wrap gap-3">
-          {subjects.map((subject: string) => (
-            <button
-              key={subject}
-              className={getButtonStyle(activeFilters.subject === subject)}
-              onClick={() => toggleFilter("subject", subject)}
-            >
-              {subject}
-            </button>
-          ))}
-        </div>
-
-        {/* Year Filters */}
-        <div className="flex flex-wrap gap-3">
-          {years.map((year: string) => (
-            <button
-              key={year}
-              className={getButtonStyle(activeFilters.year === year)}
-              onClick={() => toggleFilter("year", year)}
-            >
-              {year}
-            </button>
-          ))}
-        </div>
       </div>
+    </div>
+  );
+
+  return (
+    <div className="w-full">
+      <div className="flex items-center justify-between mb-8 border-b border-neutral-200/50 pb-4">
+        <button
+          onClick={() => setShowFilters(!showFilters)}
+          className="flex items-center gap-2 text-neutral font-bold text-sm group"
+        >
+          <div className={`p-1.5 rounded-lg transition-colors ${showFilters ? 'bg-primary text-white' : 'bg-neutral-100 text-neutral-soft group-hover:bg-neutral-200'}`}>
+            <Filter size={14} />
+          </div>
+          {showFilters ? "Refine Archives" : "Show Library Filters"}
+          {showFilters ? <ChevronUp size={16} className="opacity-40" /> : <ChevronDown size={16} className="opacity-40" />}
+        </button>
+
+        {hasActiveFilters && (
+          <button
+            onClick={clearFilters}
+            className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-state-error hover:opacity-80 transition-opacity"
+          >
+            <Trash2 size={12} />
+            Reset All
+          </button>
+        )}
+      </div>
+
+      <AnimatePresence>
+        {showFilters && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="overflow-hidden"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 bg-white/50 backdrop-blur-sm rounded-3xl p-8 border border-white">
+              <FilterSection title="Academic Grade" items={grades.filter(Boolean)} category="grade" />
+              <FilterSection title="Curriculum Subject" items={subjects} category="subject" />
+              <FilterSection title="Published Year" items={years} category="year" />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 import { FC, useEffect } from "react";
-import { X } from "lucide-react";
+import { X, Calendar, Tag, Quote } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Props {
   open: boolean;
@@ -24,65 +25,122 @@ const StoryPopup: FC<Props> = ({
   isVideo,
 }) => {
   useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
     const onEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
     document.addEventListener("keydown", onEsc);
-    return () => document.removeEventListener("keydown", onEsc);
-  }, []);
-
-  if (!open) return null;
+    return () => {
+      document.removeEventListener("keydown", onEsc);
+      document.body.style.overflow = "unset";
+    };
+  }, [open]);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
-      <div
-        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-        onClick={onClose}
-      />
+    <AnimatePresence>
+      {open && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 lg:p-8">
+          {/* Backdrop */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+            className="absolute inset-0 bg-neutral/40 backdrop-blur-md"
+          />
 
-      <div className="relative z-[9999] w-[95%] max-w-2xl bg-white rounded-2xl shadow-xl p-6 animate-popup-in max-h-[90vh] overflow-y-auto">
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 text-textSecondary hover:text-red-500"
-        >
-          <X size={20} />
-        </button>
+          {/* Modal Content */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.9, y: 20 }}
+            transition={{ type: "spring", damping: 25, stiffness: 300 }}
+            className="relative z-10 w-full max-w-4xl bg-white rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col md:flex-row max-h-[90vh]"
+          >
+            {/* Close Button */}
+            <button
+              onClick={onClose}
+              className="absolute top-6 right-6 z-20 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-white md:text-neutral md:bg-neutral-100/50 md:hover:bg-neutral-100 flex items-center justify-center transition-all shadow-sm"
+            >
+              <X size={20} />
+            </button>
 
-        <div className="text-xs text-accent uppercase mb-2">
-          🏷️ {type} · 📅 {year}
+            {/* Visual Column */}
+            <div className="md:w-1/2 relative bg-neutral-900 flex items-center justify-center overflow-hidden h-[300px] md:h-auto">
+              {isVideo ? (
+                <video
+                  src={media}
+                  controls
+                  autoPlay
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <img
+                  src={media}
+                  alt={title}
+                  className="w-full h-full object-cover"
+                />
+              )}
+              {/* Overlay Gradient for mobile */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:hidden" />
+              <div className="absolute bottom-6 left-6 text-white md:hidden">
+                <span className="text-[10px] font-bold uppercase tracking-widest bg-primary px-2 py-1 rounded-full mb-2 inline-block">
+                  {type}
+                </span>
+                <h2 className="text-xl font-serif font-bold leading-tight">{title}</h2>
+              </div>
+            </div>
+
+            {/* content Column */}
+            <div className="md:w-1/2 p-8 md:p-12 overflow-y-auto bg-[#FDFCFB] relative">
+              <div className="hidden md:block space-y-6">
+                <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-primary/60">
+                  <div className="flex items-center gap-1.5">
+                    <Tag size={12} />
+                    {type}
+                  </div>
+                  <div className="w-1 h-1 rounded-full bg-primary/20" />
+                  <div className="flex items-center gap-1.5">
+                    <Calendar size={12} />
+                    {year}
+                  </div>
+                </div>
+
+                <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral leading-tight">
+                  {title}
+                </h2>
+                <div className="h-1 w-12 bg-primary/20 rounded-full" />
+              </div>
+
+              <div className="mt-8 relative">
+                <Quote size={40} className="absolute -top-6 -left-4 text-primary/5 -z-0" />
+                <div className="relative z-10">
+                  <p className="text-neutral-soft text-lg leading-relaxed italic font-medium whitespace-pre-line first-letter:text-4xl first-letter:font-serif first-letter:text-primary first-letter:mr-1">
+                    {story}
+                  </p>
+                </div>
+              </div>
+
+              {/* Decorative base accent */}
+              <div className="mt-12 pt-8 border-t border-neutral-100 flex items-center justify-between opacity-50">
+                <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-neutral-muted">
+                  School Archives
+                </span>
+                <div className="flex gap-1">
+                  {[1, 2, 3].map((i) => (
+                    <div key={i} className="w-1 h-1 rounded-full bg-primary/30" />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
-
-        <h2 className="text-2xl font-serif font-bold text-textPrimary mb-4">
-          {title}
-        </h2>
-
-        {isVideo ? (
-          <video src={media} controls className="w-full rounded-lg mb-4" />
-        ) : (
-          <img src={media} alt={title} className="w-full rounded-lg mb-4" />
-        )}
-
-        <blockquote className="text-[15px] text-textSecondary leading-relaxed whitespace-pre-line italic">
-          “{story}”
-        </blockquote>
-      </div>
-
-      <style jsx>{`
-        @keyframes popup-in {
-          from {
-            transform: scale(0.95);
-            opacity: 0;
-          }
-          to {
-            transform: scale(1);
-            opacity: 1;
-          }
-        }
-        .animate-popup-in {
-          animation: popup-in 0.3s ease-out;
-        }
-      `}</style>
-    </div>
+      )}
+    </AnimatePresence>
   );
 };
 

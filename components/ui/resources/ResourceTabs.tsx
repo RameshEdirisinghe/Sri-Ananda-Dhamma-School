@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import ResourceGrid from "./ResourceGrid";
 import ResourceFilter from "./ResourceFilter";
 import { useResourcesData } from "@/hooks/useResourcesData";
@@ -15,7 +16,6 @@ export default function ResourceTabs() {
   const { types } = useResourcesData();
   const [activeTab, setActiveTab] = useState<string>("");
 
-  // ✅ Lifting filter state here
   const [activeFilters, setActiveFilters] = useState<ActiveFilters>({
     grade: null,
     subject: null,
@@ -28,32 +28,54 @@ export default function ResourceTabs() {
     }
   }, [types, activeTab]);
 
-  if (!types.length) return <div className="text-center">Loading resources...</div>;
+  if (!types.length) return <div className="text-center py-20 opacity-50">Loading archives...</div>;
 
   return (
-    <div className="space-y-8">
-      {/* Tabs */}
-      <div className="flex gap-4 border-b pb-2">
-        {types.map((type: string) => (
-          <button
-            key={type}
-            className={`text-sm font-medium pb-1 border-b-2 transition ${
-              activeTab === type
-                ? "border-primary text-primary"
-                : "border-transparent text-textSecondary hover:text-primary"
-            }`}
-            onClick={() => setActiveTab(type)}
-          >
-            {type}
-          </button>
-        ))}
+    <div className="space-y-12">
+      {/* Premium Desktop Tabs */}
+      <div className="flex justify-center">
+        <div className="flex items-center gap-1.5 p-1.5 bg-neutral-100/80 rounded-[2rem] border border-neutral-200/50 shadow-inner">
+          {types.map((type: string) => {
+            const isActive = activeTab === type;
+            return (
+              <button
+                key={type}
+                onClick={() => setActiveTab(type)}
+                className={`relative px-8 py-3 text-sm font-bold rounded-[1.5rem] transition-all duration-300 capitalize ${
+                  isActive
+                    ? "text-primary shadow-[0_2px_12px_rgba(0,0,0,0.06)]"
+                    : "text-neutral-soft hover:text-primary hover:bg-white/50"
+                }`}
+              >
+                {isActive && (
+                  <motion.div
+                    layoutId="resource-tab-bg"
+                    className="absolute inset-0 bg-white rounded-[1.5rem] z-0"
+                    transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                  />
+                )}
+                <span className="relative z-10">{type}</span>
+              </button>
+            );
+          })}
+        </div>
       </div>
 
-      {/* ✅ Pass filters down as props */}
-      <ResourceFilter activeFilters={activeFilters} setActiveFilters={setActiveFilters} />
-      {activeTab && (
-        <ResourceGrid type={activeTab} activeFilters={activeFilters} />
-      )}
+      <div className="bg-neutral-50/50 rounded-[2.5rem] p-8 lg:p-12 border border-neutral-100">
+        <ResourceFilter activeFilters={activeFilters} setActiveFilters={setActiveFilters} />
+        
+        <motion.div
+          key={activeTab + JSON.stringify(activeFilters)}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className="mt-12"
+        >
+          {activeTab && (
+            <ResourceGrid type={activeTab} activeFilters={activeFilters} />
+          )}
+        </motion.div>
+      </div>
     </div>
   );
 }

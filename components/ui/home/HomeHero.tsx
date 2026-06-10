@@ -55,22 +55,22 @@ export default function HomeHero() {
               src={currentImageUrl}
               alt={`Slide ${currentImage + 1}`}
               fill
-              className="object-cover brightness-[0.6]"
+              className="object-cover brightness-[0.7]"
               priority
               unoptimized
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
           </motion.div>
         </AnimatePresence>
       </div>
 
       {/* Text Content */}
-      <div className="text-center px-6 z-10 max-w-2xl">
+      <div className="text-center px-6 z-10 max-w-3xl">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-bold tracking-tight leading-tight"
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-4xl md:text-6xl font-bold tracking-tight leading-tight text-white drop-shadow-lg"
         >
           {heroData.heading}
         </motion.h1>
@@ -78,20 +78,20 @@ export default function HomeHero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-          className="mt-4 text-lg md:text-xl font-light"
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="mt-6 text-lg md:text-xl font-light text-white/90 drop-shadow max-w-2xl mx-auto"
         >
           {heroData.subtext}
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-          className="mt-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          className="mt-10 flex justify-center"
         >
           <Link href="/about">
-            <button className="bg-accent px-6 py-3 text-white rounded-full font-medium shadow hover:bg-[#a3855c] transition">
+            <button className="bg-primary hover:bg-[#a36c34] px-8 py-3.5 text-white rounded-full font-medium shadow-sm hover:shadow-md transition-all duration-300">
               {heroData.cta}
             </button>
           </Link>

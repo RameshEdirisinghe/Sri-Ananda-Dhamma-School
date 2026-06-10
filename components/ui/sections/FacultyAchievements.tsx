@@ -9,18 +9,29 @@ export default function FacultyAchievements({ items }: { items: string[] }) {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-      className="space-y-3"
+      className="space-y-6 pt-6"
     >
-      <div className="flex items-center gap-2 text-primary font-semibold">
-        <Trophy className="w-5 h-5" />
-        <h2 className="text-lg sm:text-xl">Achievements</h2>
+      <div className="flex items-center gap-3 text-primary font-bold">
+        <Trophy className="w-6 h-6" />
+        <h2 className="text-2xl sm:text-3xl tracking-tight text-neutral">Key Achievements</h2>
       </div>
 
-      <ul className="space-y-2 pl-4 list-disc text-textSecondary bg-accent/5 p-4 rounded-lg">
+      <div className="grid sm:grid-cols-2 gap-4">
         {items.map((item, i) => (
-          <li key={i} className="text-sm">{item}</li>
+          <motion.div 
+            key={i} 
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: i * 0.1, duration: 0.4 }}
+            className="flex items-start gap-4 p-5 rounded-[1.25rem] bg-white border border-neutral-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+          >
+            <div className="mt-0.5 bg-primary/10 p-2 rounded-xl text-primary shrink-0">
+              <Trophy className="w-4 h-4" />
+            </div>
+            <p className="text-sm font-semibold text-neutral-soft leading-relaxed flex-1">{item}</p>
+          </motion.div>
         ))}
-      </ul>
+      </div>
     </motion.div>
   );
 }

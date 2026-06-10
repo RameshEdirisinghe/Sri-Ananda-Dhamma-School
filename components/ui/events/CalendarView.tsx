@@ -85,7 +85,48 @@ export default function CalendarView() {
       </div>
 
       {/* Calendar Section */}
-      <div className="lg:sticky top-24 h-fit self-start w-full lg:w-[320px] shadow-md bg-white rounded-xl p-4 border border-gray-100">
+      <div className="lg:sticky top-24 h-fit self-start w-full lg:w-[350px] shadow-[0_2px_15px_rgba(0,0,0,0.03)] bg-white rounded-[1.5rem] p-6 border border-neutral-100/60">
+        <style jsx global>{`
+          .react-calendar {
+            width: 100% !important;
+            border: none !important;
+            font-family: inherit !important;
+          }
+          .react-calendar__navigation {
+            margin-bottom: 1.5rem !important;
+          }
+          .react-calendar__navigation button {
+            color: #333 !important;
+            font-weight: 700 !important;
+            font-size: 1rem !important;
+          }
+          .react-calendar__month-view__weekdays {
+            text-transform: uppercase !important;
+            font-weight: 700 !important;
+            font-size: 0.75rem !important;
+            color: #666 !important;
+            margin-bottom: 1rem !important;
+          }
+          .react-calendar__tile {
+            padding: 0.75rem 0.5rem !important;
+            font-size: 0.875rem !important;
+            border-radius: 0.75rem !important;
+            transition: all 0.2s ease !important;
+          }
+          .react-calendar__tile:hover {
+            background-color: rgba(245, 158, 11, 0.05) !important;
+          }
+          .react-calendar__tile--active {
+            background: #f97316 !important;
+            color: white !important;
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3) !important;
+          }
+          .react-calendar__tile--now {
+            background: rgba(249, 115, 22, 0.1) !important;
+            color: #f97316 !important;
+            font-weight: 700 !important;
+          }
+        `}</style>
         <Calendar
           onClickDay={(date) => {
             if (
@@ -98,7 +139,7 @@ export default function CalendarView() {
             }
           }}
           tileContent={tileContent}
-          className="!border-none text-sm"
+          className="calendar-custom"
           value={selectedDate ?? new Date()}
         />
       </div>
